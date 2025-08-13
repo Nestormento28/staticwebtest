@@ -1,0 +1,77 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: white;
+    z-index: 200;
+}
+
+header img {
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+header .header-menu,
+header .header-contact {
+    width: 100%;
+}
+
+header .header-logo img {
+    height: 56px;
+}
+
+header .header-contact {
+    display: flex;
+    font-size: 18px;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+header .header-contact img {
+    height: 18px;
+    vertical-align: middle;
+}
+
+header .header-contact a {
+    position: relative;
+}
+
+header .header-contact a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+header .header-contact a:hover:after {
+    width: 100%;
+}
+
+/* SCROLLED */
+
+header.scrolled {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px #0009;
+}
+
+header.scrolled img {
+    filter: none;
+}
+
+header.scrolled .header-logo img {
+    height: 32px;
+}
+
+header.scrolled .header-contact a:after {
+    background-color: black;
+}

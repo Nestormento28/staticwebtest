@@ -1,78 +1,45 @@
 @import url("reset.css");
+@import url("header.css");
+@import url("footer.css");
 
 :root {
     --primary-color: #9015ac;
 }
 
-a {
-    color: inherit;
+
+.darken {
+    filter: brightness(0.6);
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px 40px;
-    align-items: center;
-    transition: all 0.3s ease;
-    color: white;
+.blur {
+    filter: blur(10px);
+    transform: scale(1.2)
 }
 
-header img {
-    filter: brightness(0) invert(1);
-    transition: all 0.3s ease;
+.darken.blur {
+    filter: blur(10px) brightness(0.6);
 }
 
-header.scrolled {
-    color: black;
-    background-color: white;
-    box-shadow: 0 0 10px #0009;
+.banner-hs {
+    height: 50vh;
 }
 
-header.scrolled img {
-    filter: none;
-}
-
-.header-menu,
-.header-contact {
-    width: 100%;
-}
-
-.header-logo img {
-    height: 56px;
-}
-
-
-header.scrolled .header-logo img {
-    height: 32px;
-}
-
-.header-contact {
-    display: flex;
-    font-size: 18px;
-    justify-content: flex-end;
-    gap: 16px;
-}
-
-.header-contact img {
-    height: 18px;
-    vertical-align: middle;
-}
-
-main {
-    height: 150vh;
+.banner-fs {
+    height: 100vh;
 }
 
 .banner img {
     object-fit: cover;
     width: 100%;
+}
+
+main .container { /* borrar */
     height: 100vh;
 }
 
-
-footer {
-    height: 20vh;
-    background-color: #9015ac;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
 }
