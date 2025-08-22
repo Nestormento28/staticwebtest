@@ -6,6 +6,12 @@
     --primary-color: #9015ac;
 }
 
+@font-face {
+  font-family: 'Denk One';
+  src: url('../fonts/DenkOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .darken {
     filter: brightness(0.6);
@@ -34,7 +40,8 @@
 }
 
 main .container { /* borrar */
-    height: 45vh;
+    height: 60vh;
+    background-color: bisque;
 }
 
 .container {
