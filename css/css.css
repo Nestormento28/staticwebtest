@@ -40,8 +40,7 @@
 }
 
 main .container { /* borrar */
-    height: 60vh;
-    background-color: rgb(255, 253, 219);
+    height: 45vh;
 }
 
 .container {
